@@ -10,6 +10,7 @@ RUN apt-get update -y && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install \
+    --upgrade pip \
     robotframework \
     future \
     python-uinput \
