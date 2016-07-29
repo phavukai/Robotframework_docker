@@ -12,14 +12,9 @@ RUN apt-get update -y && apt-get install -y \
 RUN pip3 install \
     robotframework \
     future \
-    python-uinput
+    python-uinput \
+    robotframework-selenium2library
 
-RUN wget https://github.com/HelioGuilherme66/robotframework-selenium2library/archive/v1.8.0b1.tar.gz \
-    && tar xvfz v1.8.0b1.tar.gz \
-    && cd robotframework-selenium2library-1.8.0b1/ \
-    && python3 setup.py install \
-    && cd .. \
-    && rm -rf v1.8.0b1.tar.gz robotframework-selenium2library-1.8.0b1
 
 ENV DISPLAY=xvfb:0
 
