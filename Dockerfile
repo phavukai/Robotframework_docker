@@ -5,7 +5,7 @@ RUN apt-get update -y && apt-get install -y \
     python3-pip \
     libglu1 \
     python-dev \
-    libevent-dev \
+    libudev-dev \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
