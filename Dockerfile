@@ -9,7 +9,7 @@ RUN apt-get update -y && apt-get install -y \
 
 RUN pip3 install \
     robotframework \
-    future
+    future \ 
     python-uinput
 
 RUN wget https://github.com/HelioGuilherme66/robotframework-selenium2library/archive/v1.8.0b1.tar.gz \
