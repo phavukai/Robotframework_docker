@@ -4,12 +4,14 @@ RUN apt-get update -y && apt-get install -y \
     firefox=45.0.2+build1-0ubuntu1 \
     python3-pip \
     libglu1 \
+    python-dev \
+    libevent-dev \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install \
     robotframework \
-    future \ 
+    future \
     python-uinput
 
 RUN wget https://github.com/HelioGuilherme66/robotframework-selenium2library/archive/v1.8.0b1.tar.gz \
