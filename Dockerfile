@@ -13,7 +13,7 @@ RUN pip3 install \
     robotframework \
     future \
     python-uinput \
-    python3_xlib 
+    python3_xlib
 
 
 RUN wget https://github.com/HelioGuilherme66/robotframework-selenium2library/archive/v1.8.0b1.tar.gz \
@@ -27,6 +27,8 @@ RUN wget https://github.com/HelioGuilherme66/robotframework-selenium2library/arc
 
 
 ENV DISPLAY=xvfb:0
+
+RUN xhost +
 
 RUN pip3 install \
     pyautogui
