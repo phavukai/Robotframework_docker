@@ -6,6 +6,8 @@ RUN apt-get update -y && apt-get install -y \
     libglu1 \
     python-dev \
     libudev-dev \
+    python3-tk \
+    python3-dev \
     wget \
     && rm -rf /var/lib/apt/lists/*
 
